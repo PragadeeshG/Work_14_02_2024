@@ -1,0 +1,16 @@
+create table if not exists arc_win_approval_event(
+seq_id integer not null,
+event_name varchar(255) null,
+event_desc varchar(255) null,
+is_active char null,
+event_type varchar(255) null,
+auto_trigger char null,
+tigger_after varchar(255) null,
+action_to_trigger varchar(255) null,
+object_types_to_trigger varchar(255) null,
+incremental_event_type varchar(255) null,
+scheduled_event varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint arc_win_approval_event_pk primary key(seq_id));

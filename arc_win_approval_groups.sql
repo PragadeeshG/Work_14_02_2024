@@ -1,0 +1,16 @@
+create table if not exists arc_win_approval_groups(
+seq_id integer not null,
+approval_grp_name varchar(255) null,
+approval_grp_desc varchar(255) null,
+is_active char null,
+event_name varchar(255) null,
+is_generic_approval char null,
+approval_group_type varchar(255) null,
+action_type varchar(255) null,
+approval_object_type varchar(255) null,
+auto_approval_flag varchar(255) null,
+cc_list varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint arc_win_approval_groups_pk primary key(seq_id));

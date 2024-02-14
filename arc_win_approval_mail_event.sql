@@ -1,0 +1,15 @@
+create table if not exists arc_win_approval_mail_event(
+seq_id integer not null,
+event_id integer null,
+mail_template varchar(255) null,
+is_active char null,
+from_approval_env varchar(255) null,
+event_host varchar(255) null,
+to_list varchar(255) null,
+cc_list varchar(255) null,
+bcc_list varchar(255) null,
+attachement_type varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint arc_win_approval_mail_event_pk primary key(seq_id));
